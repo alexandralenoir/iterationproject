@@ -19,7 +19,13 @@ def present_student_count():
 
         
 
-#OOP Enhancements/ encapsulation
+#OOP Enhancements
+#Applied all four OOP priciples
+#Encapsulation is seen with total_students, present_students, and attendance and the methods, mark_present and display_attendance are inside the StudentAttendance class.
+#Abstraction is seen when using the methods mark_present() and display_attendance() to create a present and absent list.
+#Inheritance is seen with my StudentAttendance and OnlineAttendance having the method display_attendance().
+#Polymorphism is seen in both StudentAttendance and OnlineAttendance since they have the method display_attendance() which allows the behavior to change depending on which class you are using.
+
 class StudentAttendance:
     def __init__(self, total_students):
         self.total_students = total_students
@@ -66,4 +72,5 @@ else:
     online_tracker = OnlineAttendance(total)
     online_tracker.mark_present(present)
     online_tracker.display_attendance()
+
                         
